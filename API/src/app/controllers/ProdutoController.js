@@ -1,18 +1,18 @@
 const ProdutosSchema = require('../models/ProdutoSchema');
 
-module.exports = {  
-     store(req, res) {
-        const { id, name, descricao, preco } = req.body;
+module.exports = {
+    store(req, res) {
+        const { id, name, description, price } = req.body;
 
-        if (!id || !descricao || !name || !preco) {
+        if (!id || !description || !name || !price) {
             return res.status(400).json({ err: "Todos campos são obrigatorios" })
         }
 
         const produto = new ProdutosSchema({
             id,
             name,
-            descricao,
-            preco,
+            description,
+            price,
         });
 
         produto.save(function (err) {
@@ -24,9 +24,9 @@ module.exports = {
 
     },
 
-     index(req, res) {
+    index(req, res) {
 
-        ProdutosSchema.find({}, (err, users) => {
+        ProdutosSchema.find({}, { _id: 0, __v: 0 }, (err, users) => {
 
             if (err) {
                 return res.status(500).json(err);
@@ -36,14 +36,14 @@ module.exports = {
         });
     },
 
-     update(req, res) {
-        const { id, name, descricao, preco } = req.body;
+    update(req, res) {
+        const { id, name, description, price } = req.body;
 
         ProdutosSchema.findOne({ id: id }, (err, produto) => {
             produto.id = id;
             produto.name = name;
-            produto.descricao = descricao;
-            produto.preco = preco;
+            produto.description = description;
+            produto.price = price;  
 
             produto.save(function (err) {
                 if (err) {
@@ -54,7 +54,7 @@ module.exports = {
         });
     },
 
-     delete(req, res) {
+    delete(req, res) {
         const { id } = req.body;
 
         ProdutosSchema.findOne({ id: id }, (err, produto) => {
@@ -66,8 +66,5 @@ module.exports = {
                 return res.status(204).json(produto);
             });
         });
-
-
-
     }
 }

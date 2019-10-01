@@ -10,15 +10,15 @@ namespace CadastrodeUsuarios
     {
         public string id { get; set; }
         public string name { get; set; }
-        public string descricao { get; set; }
-        public string preco { get; set; }
+        public string description { get; set; }
+        public string price { get; set; }
 
         public Produto(string id, string name, string description, string price)
         {
             this.id = id;
             this.name = name;
-            this.descricao = description;
-            this.preco = price;
+            this.description = description;
+            this.price = price;
 
         }
     }
