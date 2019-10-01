@@ -1,0 +1,15 @@
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\CadastrodeUsuarios.exe.config
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\CadastrodeUsuarios.exe
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\CadastrodeUsuarios.pdb
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\RestSharp.dll
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\bin\Debug\RestSharp.xml
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.csprojAssemblyReference.cache
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.Form1.resources
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.Properties.Resources.resources
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.csproj.GenerateResource.cache
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.csproj.CoreCompileInputs.cache
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.csproj.CopyComplete
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.exe
+C:\Users\Cezar\source\repos\CadastrodeUsuarios\CadastrodeUsuarios\obj\Debug\CadastrodeUsuarios.pdb

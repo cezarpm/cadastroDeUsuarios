@@ -1,7 +1,7 @@
 const ProdutosSchema = require('../models/ProdutoSchema');
 
-module.exports = {
-    async store(req, res) {
+module.exports = {  
+     store(req, res) {
         const { id, name, descricao, preco } = req.body;
 
         if (!id || !descricao || !name || !preco) {
@@ -24,7 +24,7 @@ module.exports = {
 
     },
 
-    async index(req, res) {
+     index(req, res) {
 
         ProdutosSchema.find({}, (err, users) => {
 
@@ -36,7 +36,7 @@ module.exports = {
         });
     },
 
-    async update(req, res) {
+     update(req, res) {
         const { id, name, descricao, preco } = req.body;
 
         ProdutosSchema.findOne({ id: id }, (err, produto) => {
@@ -54,7 +54,7 @@ module.exports = {
         });
     },
 
-    async delete(req, res) {
+     delete(req, res) {
         const { id } = req.body;
 
         ProdutosSchema.findOne({ id: id }, (err, produto) => {
