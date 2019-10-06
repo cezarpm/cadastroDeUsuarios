@@ -40,6 +40,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabela_produtos = new System.Windows.Forms.DataGridView();
+            this.remover_btn = new System.Windows.Forms.Button();
+            this.remove_box = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produtos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,15 +139,46 @@
             this.tabela_produtos.Name = "tabela_produtos";
             this.tabela_produtos.ReadOnly = true;
             this.tabela_produtos.RowHeadersVisible = false;
-            this.tabela_produtos.Size = new System.Drawing.Size(495, 334);
+            this.tabela_produtos.Size = new System.Drawing.Size(495, 290);
             this.tabela_produtos.TabIndex = 11;
             this.tabela_produtos.SelectionChanged += new System.EventHandler(this.Tabela_produtos_SelectionChanged);
+            // 
+            // remover_btn
+            // 
+            this.remover_btn.Location = new System.Drawing.Point(437, 379);
+            this.remover_btn.Name = "remover_btn";
+            this.remover_btn.Size = new System.Drawing.Size(75, 23);
+            this.remover_btn.TabIndex = 12;
+            this.remover_btn.Text = "Remover";
+            this.remover_btn.UseVisualStyleBackColor = true;
+            this.remover_btn.Click += new System.EventHandler(this.Remover_btn_Click);
+            // 
+            // remove_box
+            // 
+            this.remove_box.Location = new System.Drawing.Point(331, 381);
+            this.remove_box.Name = "remove_box";
+            this.remove_box.Size = new System.Drawing.Size(100, 20);
+            this.remove_box.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(145, 384);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 18);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Digite um ID para remover";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(520, 417);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.remove_box);
+            this.Controls.Add(this.remover_btn);
             this.Controls.Add(this.tabela_produtos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -155,7 +189,9 @@
             this.Controls.Add(this.desc_box);
             this.Controls.Add(this.name_box);
             this.Controls.Add(this.id_box);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Cadastrar Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.tabela_produtos)).EndInit();
             this.ResumeLayout(false);
@@ -176,6 +212,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView tabela_produtos;
+        private System.Windows.Forms.Button remover_btn;
+        private System.Windows.Forms.TextBox remove_box;
+        private System.Windows.Forms.Label label5;
     }
 }
 

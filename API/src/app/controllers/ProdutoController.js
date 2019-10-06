@@ -2,6 +2,7 @@ const ProdutosSchema = require('../models/ProdutoSchema');
 
 module.exports = {
     store(req, res) {
+
         const { id, name, description, price } = req.body;
 
         if (!id || !description || !name || !price) {
@@ -21,7 +22,6 @@ module.exports = {
 
             return res.status(201).json(produto);
         })
-
     },
 
     index(req, res) {
@@ -43,7 +43,7 @@ module.exports = {
             produto.id = id;
             produto.name = name;
             produto.description = description;
-            produto.price = price;  
+            produto.price = price;
 
             produto.save(function (err) {
                 if (err) {
